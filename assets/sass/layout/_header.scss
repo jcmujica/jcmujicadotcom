@@ -1,0 +1,61 @@
+.hero {
+	width: 100%;
+	height: 100vh;
+	// overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+
+	&__nav {
+		position: absolute;
+		color: white;
+	}
+
+	&__video {
+		width: 100%; 
+		object-fit: fill;
+		filter: opacity(90%) blur(15px);
+		height: 100vh;
+		z-index: 0;
+
+		&_overlay {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			left: 0;
+			height: 100vh;
+			background-image: -webkit-linear-gradient(bottom left, #00a471, #00999f, #0089dc, #006eff, #122eeb);
+			background-image: -o-linear-gradient(bottom left, #00a471, #00999f, #0089dc, #006eff, #122eeb);
+			background-image: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb);
+			opacity: .8;
+			z-index: 1;
+		}
+
+		&-container {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			left: 0;
+		}
+	}
+
+	&__title {
+		color: white;
+		position: absolute;
+		z-index: 2;
+		font-size: 2em;
+	}
+
+
+	// &:before {
+	//   content: '';
+	//   position: absolute;
+	//   background: rgba(0, 0, 0, .5);
+	//   top: 0;
+	//   right: 0;
+	//   bottom: 0;
+	//   left: 0;		
+	// }
+}
