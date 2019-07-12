@@ -1,4 +1,8 @@
 .skill {
+	
+	
+	justify-content: space-around;
+
 	&s {
 		margin: 100px auto;
 		height: 100vh;
@@ -11,7 +15,43 @@
 	border-radius: 10px;
 	margin: 15px;
 	&:hover {
-		box-shadow: 0px 0px 8px 0px rgba(156,156,156,1);
+		box-shadow: 0px 0px 8px 0px rgba(156,156,156,.5);
+	}
+	&__title {
+		text-align: center;
+		padding: 25px;
+		color: $medium-black;
+		font-size: 1.7em;
+	}
+	&__images {
+		display: flex;
+		justify-content: center;
+		&-html {
+			fill: $medium-black;	
+			padding: 0 30px;
+			width: 25%;
+		}
+		&-css {
+			fill: $medium-black;	
+			padding: 0 30px;
+			width: 20%;	
+		}
+		&-sass {
+			fill: $medium-black;	
+			padding: 0 30px;
+			width: 30%;		
+		}
+		&-js {
+			fill: $medium-black;	
+			padding: 0 30px;
+			width: 20%;	
+		}
+		&-react {
+			fill: $medium-black;	
+			padding: 0 30px;
+			width: 20%;	
+		}
+
 	}
 
 }
