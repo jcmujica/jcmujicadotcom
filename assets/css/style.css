@@ -170,10 +170,11 @@ body {
 }
 .hero__nav ul {
   list-style: none;
+  margin: 0 20px 0 0;
 }
 .hero__nav ul li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 .hero__nav ul li a {
   text-decoration: none;
@@ -215,7 +216,7 @@ body {
 }
 .skills {
   margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -284,7 +285,6 @@ body {
 }
 .html-skill:hover .skill__title {
   color: white;
-  text-shadow: 5px 0px 12px #444444;
 }
 .html-skill:hover .skill__images-html,
 .html-skill:hover .skill__images-css {

@@ -11,7 +11,7 @@
 
 	&s {
 		margin: 0 auto;
-		height: 100vh;
+		height: 80vh;
 		width: 90%;
 		display: flex;
 		flex-wrap: wrap;
@@ -82,8 +82,6 @@
 		background-color: $html-blue;
 		.skill__title {
 			color: white;
-			text-shadow: 5px 0px 12px rgba(68, 68, 68, 1);
-
 		}
 		.skill__images-html,
 		.skill__images-css {
