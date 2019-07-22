@@ -77,6 +77,10 @@
  * @since 1.0
  *
  */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -196,6 +200,7 @@ body {
   width: 4em;
   fill: white;
   z-index: 3;
+  scroll-behavior: smooth;
 }
 
 .skill {
