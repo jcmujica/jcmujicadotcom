@@ -200,7 +200,6 @@ body {
   width: 4em;
   fill: white;
   z-index: 3;
-  scroll-behavior: smooth;
 }
 
 .skill {
