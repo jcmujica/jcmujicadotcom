@@ -370,12 +370,13 @@ body {
 .about__content {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
 }
 .about__main_title {
   margin: 0 auto;
 }
 .about__card {
-  width: 250px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
