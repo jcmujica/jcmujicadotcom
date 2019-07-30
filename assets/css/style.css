@@ -204,6 +204,11 @@ body {
   z-index: 3;
 }
 
+.form {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .skill {
   display: flex;
   flex-flow: column;
@@ -211,8 +216,8 @@ body {
   align-items: center;
   width: 30%;
   height: 200px;
-  border: solid #CCC 1px;
-  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  border-radius: 4px;
   margin: 15px;
 }
 .skills {
@@ -231,9 +236,6 @@ body {
   text-align: center;
   font-size: 2em;
   text-decoration: underline;
-}
-.skill:hover {
-  box-shadow: 0px 0px 8px 0px rgba(156, 156, 156, 0.5);
 }
 .skill__title {
   text-align: center;
@@ -360,6 +362,30 @@ body {
 }
 .wp-skill:hover .skill__images-wp {
   fill: white;
+}
+
+.about {
+  margin: 100px;
+}
+.about__content {
+  display: flex;
+  justify-content: space-around;
+}
+.about__main_title {
+  margin: 0 auto;
+}
+.about__card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.about__title {
+  display: block;
+}
+.about__image {
+  display: block;
 }
 
 /*
