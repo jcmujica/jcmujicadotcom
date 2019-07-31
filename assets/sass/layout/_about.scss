@@ -1,24 +1,36 @@
 .about {
-	margin: 100px;
+	margin: 100px 10%;
 	&__content {
 		display: flex;
 		justify-content: space-around;
 		flex-direction: column;
+		color: $low-black;
 	}
-	&__main_title {
-		margin: 0 auto; 
+	&__main-title {
+		color: $medium-black;
+		width: 100%;
+		text-align: center;
+		font-size: 2em;
+		text-decoration: underline;
 	}
 	&__card {
 		width: 100%;
 		display: flex;
-		flex-direction: column;
 		align-items: center;
 		padding: 20px;
+		margin: 10px;
 	}
 	&__title {
-		display: block;
+		font-size: 1.3em;
+		padding: 5px 0;
+		color: $medium-black;
 	}
 	&__image {
-		display: block;
+		width: 150px; 
+		fill: $medium-black;
+	}
+	&__text {
+		text-align: left;
+		padding: 0 20px;
 	}
 }

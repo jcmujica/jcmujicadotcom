@@ -205,8 +205,15 @@ body {
 }
 
 .form {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
+  background-color: #00d1b2;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+.form__container {
+  width: 50%;
 }
 
 .skill {
@@ -365,28 +372,40 @@ body {
 }
 
 .about {
-  margin: 100px;
+  margin: 100px 10%;
 }
 .about__content {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  color: #616161;
 }
-.about__main_title {
-  margin: 0 auto;
+.about__main-title {
+  color: #444649;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
 }
 .about__card {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin: 10px;
 }
 .about__title {
-  display: block;
+  font-size: 1.3em;
+  padding: 5px 0;
+  color: #444649;
 }
 .about__image {
-  display: block;
+  width: 150px;
+  fill: #444649;
+}
+.about__text {
+  text-align: left;
+  padding: 0 20px;
 }
 
 /*
