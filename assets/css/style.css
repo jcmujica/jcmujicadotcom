@@ -257,17 +257,11 @@ body {
 }
 .skill__images-html {
   fill: #444649;
-  padding: 0 20px;
-  width: 100px;
-}
-.skill__images-css {
-  fill: #444649;
-  padding: 0 20px;
   width: 80px;
 }
 .skill__images-sass {
   fill: #444649;
-  width: 100px;
+  width: 80px;
 }
 .skill__images-js {
   fill: #444649;
@@ -275,15 +269,15 @@ body {
 }
 .skill__images-react {
   fill: #444649;
-  width: 100px;
+  width: 80px;
 }
 .skill__images-git {
   fill: #444649;
-  width: 20%;
+  width: 80px;
 }
 .skill__images-wp {
   fill: #444649;
-  width: 20%;
+  width: 80px;
 }
 
 .html-skill {
@@ -296,8 +290,7 @@ body {
 .html-skill:hover .skill__title {
   color: white;
 }
-.html-skill:hover .skill__images-html,
-.html-skill:hover .skill__images-css {
+.html-skill:hover .skill__images-html {
   fill: white;
 }
 
@@ -400,12 +393,15 @@ body {
   color: #444649;
 }
 .about__image {
-  width: 150px;
   fill: #444649;
+  display: flex;
+}
+.about__image svg {
+  width: 100px;
 }
 .about__text {
   text-align: left;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 /*
