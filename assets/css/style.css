@@ -372,6 +372,7 @@ body {
   justify-content: space-around;
   flex-direction: column;
   color: #616161;
+  background-color: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb);
 }
 .about__main-title {
   color: #444649;
@@ -386,11 +387,12 @@ body {
   align-items: center;
   padding: 20px;
   margin: 10px;
+  background-color: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb);
 }
 .about__title {
   font-size: 1.3em;
   padding: 5px 0;
-  color: #444649;
+  color: black;
 }
 .about__image {
   fill: #444649;

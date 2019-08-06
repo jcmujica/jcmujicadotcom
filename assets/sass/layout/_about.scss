@@ -5,6 +5,7 @@
 		justify-content: space-around;
 		flex-direction: column;
 		color: $low-black;
+		background-color: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb);
 	}
 	&__main-title {
 		color: $medium-black;
@@ -19,11 +20,12 @@
 		align-items: center;
 		padding: 20px;
 		margin: 10px;
+		background-color: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb);
 	}
 	&__title {
 		font-size: 1.3em;
 		padding: 5px 0;
-		color: $medium-black;
+		color: black;
 	}
 	&__image {
 		fill: $medium-black;
