@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", function() {
    	offset: 100,
    	once: true
    });
-   
+
 });

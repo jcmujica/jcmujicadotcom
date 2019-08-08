@@ -231,14 +231,11 @@ body {
   margin: 15px;
 }
 .skills {
-  margin: 0 auto;
-  height: 80vh;
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  background-image: url("../images/newSVG/Cornered-Stairs.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .skills__title {
   color: #444649;
@@ -246,6 +243,16 @@ body {
   text-align: center;
   font-size: 2em;
   text-decoration: underline;
+}
+.skills__parallax {
+  max-height: 80vh;
+  padding: 100px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .skill__title {
   text-align: center;
@@ -390,12 +397,11 @@ body {
   align-items: center;
   padding: 20px;
   margin: 10px;
-  background-color: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb);
 }
 .about__title {
   font-size: 1.3em;
   padding: 5px 0;
-  color: black;
+  color: #444649;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }

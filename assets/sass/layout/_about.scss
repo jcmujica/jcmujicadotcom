@@ -20,12 +20,11 @@
 		align-items: center;
 		padding: 20px;
 		margin: 10px;
-		background-color: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb);
 	}
 	&__title {
 		font-size: 1.3em;
 		padding: 5px 0;
-		color: black;
+		color: $medium-black;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: bold;
 

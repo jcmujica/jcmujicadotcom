@@ -10,20 +10,28 @@
 	margin: 15px;
 
 	&s {
-		margin: 0 auto;
-		height: 80vh;
-		width: 90%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: center;
-		align-content: center;
+		  background-image: url("../images/newSVG/Cornered-Stairs.svg");
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
 		&__title {
 			color: $medium-black;
 			width: 100%;
 			text-align: center;
-			font-size: 2em;
+			font-size: 2em; 
 			text-decoration: underline;
+		}
+		&__parallax {
+			max-height: 80vh;	
+			padding: 100px 50px;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			align-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+
 		}
 	}
 
