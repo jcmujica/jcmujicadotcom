@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
   <link rel="stylesheet" href="assets/css/bulma.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -71,7 +72,7 @@
 <section  id="about" class="about">
   <h2 class="about__main-title">About me</h2>
   <div class="about__content">
-    <div data-scroll class="card about__card">
+    <div data-aos="fade-right" data-aos-delay="100" class="card about__card">
       <div class="about__image">
         <svg x="0px" y="0px" viewBox="0 0 200 200">
           <path d="M166.7,30H33.3c-1.8,0-3.3,1.5-3.3,3.3v103.3c0,1.8,1.5,3.3,3.3,3.3c14.7,0,26.7,11.9,26.7,26.7c0,1.8,1.5,3.3,3.3,3.3
@@ -107,7 +108,7 @@
       </div>
     </div>
 
-    <div data-scroll class="card about__card">
+    <div data-aos="fade-left" data-aos-delay="100" class="card about__card">
       <div class="about__image">
         <svg viewBox="0 0 200 176.5">
           <path d="M78.9,128.4c-0.8,0-1.5-0.3-2.1-0.8l-21.4-18.2c-0.7-0.6-1.2-1.5-1.2-2.5c0-1,0.4-1.9,1.2-2.5l21.4-18.2
@@ -136,7 +137,7 @@
       </div>
     </div>
 
-    <div data-scroll class="card about__card">
+    <div data-aos="fade-right" data-aos-delay="100" class="card about__card">
       <div class="about__image">
         <svg viewBox="0 0 200 175">
           <g>
@@ -199,7 +200,7 @@
       </div>
       <div class="about__text">
         <h2 class="about__title">Front-end Developer (2019)</h2>
-        <p class="about_content">I continued pursuing my passion for JavaScript,  started getting more in-depth knowledge of this programming language and started learning ReactJS.</p>
+        <p class="about_content">I continued pursuing my passion for JavaScript, started getting more in-depth knowledge of this programming language and started learning ReactJS.</p>
       </div>
     </div>
 
@@ -299,6 +300,7 @@
       </div>
       <h2 class="skill__title">Git</h2>
     </div>
+
     <div class="skill wp-skill">
       <div class="skill__images-wp">
         <svg viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
@@ -324,6 +326,32 @@
   </div>
 </section>
 
+<section class="projects">
+  <div class="project__card">
+    <h3 class="project__card-title">Title</h3>
+    <p class="project__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae, iusto earum provident laudantium esse amet harum aperiam! Obcaecati veritatis iste alias accusantium vero corporis aut ipsum saepe quasi magni.</p>
+  </div>
+  <div class="project__card">
+    <h3 class="project__card-title">Title</h3>
+    <p class="project__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae, iusto earum provident laudantium esse amet harum aperiam! Obcaecati veritatis iste alias accusantium vero corporis aut ipsum saepe quasi magni.</p>
+  </div>
+  <div class="project__card">
+    <h3 class="project__card-title">Title</h3>
+    <p class="project__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae, iusto earum provident laudantium esse amet harum aperiam! Obcaecati veritatis iste alias accusantium vero corporis aut ipsum saepe quasi magni.</p>
+  </div>
+  <div class="project__card">
+    <h3 class="project__card-title">Title</h3>
+    <p class="project__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae, iusto earum provident laudantium esse amet harum aperiam! Obcaecati veritatis iste alias accusantium vero corporis aut ipsum saepe quasi magni.</p>
+  </div>
+  <div class="project__card">
+    <h3 class="project__card-title">Title</h3>
+    <p class="project__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae, iusto earum provident laudantium esse amet harum aperiam! Obcaecati veritatis iste alias accusantium vero corporis aut ipsum saepe quasi magni.</p>
+  </div>
+  <div class="project__card">
+    <h3 class="project__card-title">Title</h3>
+    <p class="project__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae, iusto earum provident laudantium esse amet harum aperiam! Obcaecati veritatis iste alias accusantium vero corporis aut ipsum saepe quasi magni.</p>
+  </div>
+</section>
 
 <section class="form">
   <div class="form__container">
@@ -345,8 +373,11 @@
   </div>
   </div>
 </section>
-
-<script src="assets/js/lib/scroll-out.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- <script src="assets/js/lib/scroll-out.min.js"></script> -->
 <script src="assets/js/functions.js"></script>
 </body>
 </html>

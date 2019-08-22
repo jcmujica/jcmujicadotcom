@@ -10,11 +10,14 @@
 	margin: 15px;
 
 	&s {
-		  background-image: url("../images/newSVG/Cornered-Stairs.svg");
-		  background-attachment: fixed;
-		  background-position: center;
-		  background-repeat: no-repeat;
-		  background-size: cover;
+		// background-image: url("../../../assets/images/the-top-chile-400x360.jpg");
+		background-color: tomato;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 80vh;
+
 		&__title {
 			color: $medium-black;
 			width: 100%;
@@ -23,7 +26,7 @@
 			text-decoration: underline;
 		}
 		&__parallax {
-			max-height: 80vh;	
+			// max-height: 80vh;	
 			padding: 100px 50px;
 			width: 100%;
 			display: flex;
@@ -31,7 +34,6 @@
 			align-content: center;
 			align-items: center;
 			flex-wrap: wrap;
-
 		}
 	}
 

@@ -1,0 +1,26 @@
+.project {
+
+	&s {
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		&-title {
+			font-family: $open-sans;
+			font-weight: 700;
+			font-size: 2em;
+			align-self: center;
+		}
+		&-text {
+			padding: 20px;
+		}
+		&:hover {
+			background-color: black;
+		}
+	}
+}
