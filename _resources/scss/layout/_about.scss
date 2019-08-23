@@ -10,9 +10,11 @@
 	&__main-title {
 		color: black;
 		width: 100%;
-		text-align: center;
+		margin: 10px;
+		// text-align: center;
 		font-size: 3em;
-		font-weight: 700;
+		font-weight: 400;
+		font-family: $open-sans;
 		// text-decoration: underline;
 	}
 	&__card {

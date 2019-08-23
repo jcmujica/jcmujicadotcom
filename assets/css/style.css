@@ -124,7 +124,7 @@ body {
   .hero__video {
     width: 100%;
     object-fit: fill;
-    filter: opacity(90%) blur(15px);
+    filter: opacity(100%) blur(5px);
     height: 100vh;
     z-index: 0; }
     .hero__video_overlay {
@@ -217,21 +217,19 @@ body {
     background-size: cover;
     min-height: 80vh; }
     .skills__title {
-      color: #444649;
+      color: white;
       width: 100%;
-      text-align: center;
-      font-size: 2em;
-      text-decoration: underline; }
+      font-family: "Open Sans", sans-serif;
+      font-size: 3em; }
     .skills__parallax {
-      padding: 100px 50px;
+      padding: 100px 10%;
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-content: center;
       align-items: center;
       flex-wrap: wrap; }
   .skill__title {
-    text-align: center;
     padding: 15px 0 20px 0;
     color: #444649;
     font-size: 1.5em;
@@ -328,9 +326,10 @@ body {
   .about__main-title {
     color: black;
     width: 100%;
-    text-align: center;
+    margin: 10px;
     font-size: 3em;
-    font-weight: 700; }
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif; }
   .about__card {
     box-shadow: 0 20px 30px -16px rgba(9, 9, 16, 0.2);
     width: 100%;
