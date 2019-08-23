@@ -324,15 +324,15 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    color: #616161;
-    background-color: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb); }
+    color: #616161; }
   .about__main-title {
-    color: #444649;
+    color: black;
     width: 100%;
     text-align: center;
-    font-size: 2em;
-    text-decoration: underline; }
+    font-size: 3em;
+    font-weight: 700; }
   .about__card {
+    box-shadow: 0 20px 30px -16px rgba(9, 9, 16, 0.2);
     width: 100%;
     display: flex;
     align-items: center;
@@ -340,12 +340,12 @@ body {
     margin: 10px; }
   .about__title {
     font-size: 1.3em;
-    padding: 5px 0;
-    color: #444649;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold; }
+    padding: 15px 0;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700; }
   .about__image {
-    fill: #444649;
+    fill: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb);
     display: flex; }
     .about__image svg {
       width: 100px; }
