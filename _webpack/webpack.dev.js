@@ -1,37 +1,71 @@
 const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
-const common = require('./webpack.common')
+const autoprefixer = require('autoprefixer')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CleanTerminalPlugin = require('clean-terminal-webpack-plugin')
+const root_path = require('./_utils/rootPath')
+const configuration = require('../webpack.c')
+const common = require('./webpack.common')
 
 
 module.exports = merge(common, {
   mode: 'development',
-  output: {
-    filename: 'scripts/[name].bundle.js',
-    path: path.resolve(__dirname, '../assets/')
-  },
   plugins: [
     new webpack.ProgressPlugin(),
-    new MiniCssExtractPlugin({ filename: 'css/[name].css' })
+    new MiniCssExtractPlugin({ filename: 'styles/style.css' }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+          postcss: [
+              autoprefixer()
+          ]
+      }
+    }),
+    new CleanTerminalPlugin()
   ],
   module: {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
+          'css-hot-loader',
           MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: './postcss.config'
+              }
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: { sourceMap: true }
+          }
         ]
       },
       {
-				test: /\.(gif|jpe?g|svg|png)$/,
-				loader: 'url-loader',
-				options: {
-					limit: 8192
-				}
-			}
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
     ]
+  },
+  devServer: {
+    open: configuration.serverOpen || true,
+    hot: true,
+    contentBase: root_path(),
+    watchContentBase: true,
+    compress: true,
+    port: configuration.serverPort
   }
 })
