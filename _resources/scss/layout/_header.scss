@@ -22,7 +22,7 @@
 			height: 100vh;
 			background-image: -webkit-linear-gradient(bottom left, #00a471, #00999f, #0089dc, #006eff, #122eeb);
 			background-image: -o-linear-gradient(bottom left, #00a471, #00999f, #0089dc, #006eff, #122eeb);
-			background-image: linear-gradient(to top right, #00a471, #00999f, #0089dc, #006eff, #122eeb);
+			background-image: linear-gradient(to top right, $light-blue, $mid-blue, $darker-blue 80%);
 			opacity: .8;
 			z-index: 1;
 		}
@@ -62,12 +62,14 @@
 			padding: 0 15px;
 		}
 		&-menu {
-			// z-index: 9;
+			z-index: 2;
 		}
 		&-link {
-			z-index: 5;
 			display: inline-block;
 			padding: 0 15px;
+				a {
+					color: white;
+				}
 			&s {
 				display: flex;
 				// padding: 0 15px;
