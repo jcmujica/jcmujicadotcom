@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
   <link rel="stylesheet" href="assets/css/bulma.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="/_webpack/node_modules/aos/dist/aos.css" />
 	<link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
@@ -30,6 +30,11 @@
           <li class="hero__nav-link"><a href="">Blog</a></li>
           <li class="hero__nav-link"><a href="">Contact</a></li>
         </ul>
+        <div class="hero__nav-hamburger">
+          <div class="hero__nav-line hero__nav-first"></div>
+          <div class="hero__nav-line hero__nav-second"></div>
+          <div class="hero__nav-line hero__nav-third"></div>
+        </div>
       </div>
     </nav>
 
@@ -351,6 +356,24 @@
   </div>
 </section>
 
+<section class="blog">
+  <div class="blog__posts">
+    <div class="blog__post">
+      <div class="blog__post-title">Post 1</div>
+      <div class="blog__post-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, quam libero, ipsam veniam odio tempora.</div>
+    </div>
+    <div class="blog__post">
+      <div class="blog__post-title">Post 2</div>
+      <div class="blog__post-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, quam libero, ipsam veniam odio tempora.</div>
+    </div>
+    <div class="blog__post">
+      <div class="blog__post-title">Post 3</div>
+      <div class="blog__post-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, quam libero, ipsam veniam odio tempora.</div>
+    </div>
+
+  </div>
+</section>
+
 <section class="form">
   <div class="form__container">
     <div class="form__field field">
@@ -371,11 +394,7 @@
   </div>
   </div>
 </section>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<!-- <script src="assets/js/lib/scroll-out.min.js"></script> -->
-<script src="assets/scripts/main.bundle.js"></script>
+
+<script type="module" src="/_resources/scripts/main.js"></script>
 </body>
 </html>

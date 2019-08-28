@@ -1,8 +1,4 @@
+import AOS from '../../_webpack/node_modules/aos/dist/aos';
 document.addEventListener("DOMContentLoaded", function() {
-
-   ScrollOut({
-   	offset: 100,
-   	once: true
-   });
-
+   AOS.init();
 });
