@@ -26,14 +26,12 @@
     "url": "https://github.com/cristobaldominguez/Webpack-HTML-Boilerplate"
   },
   "homepage": "https://github.com/cristobaldominguez/Webpack-HTML-Boilerplate#readme",
-  "dependencies": {
-    "aos": "^3.0.0-beta.6"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "aos": "^3.0.0-beta.6",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/register": "^7.5.5",
+    "aos": "^3.0.0-beta.6",
     "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.6",
     "browserslist": "^4.6.6",
