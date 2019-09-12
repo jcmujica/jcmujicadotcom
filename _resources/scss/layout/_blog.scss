@@ -1,0 +1,22 @@
+.blog {
+    &__post {
+        padding: 15px;
+        &s {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        &-title {
+            font-size: 2em;
+            font-family: $open-sans;
+            color: black;
+            font-weight: 700;
+        }
+        &-image {
+            max-width: 200px
+        }
+        &-content {
+
+        }
+    }
+}

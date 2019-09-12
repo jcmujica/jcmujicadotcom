@@ -145,11 +145,11 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	.hero__nav-hamburger {
-	  display: flex;
+		display: flex;
 	}
 	.hero__nav-links {
 		display: none;
 	}
-  }
+}

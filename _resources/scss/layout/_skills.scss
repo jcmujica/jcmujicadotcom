@@ -4,9 +4,9 @@
 	justify-content: flex-end;
 	align-items: center;
 	width: 30%;
-	height: 200px;
+	height: 210px;
 	box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-	border-radius: 4px;
+	// border-radius: 4px;
 	margin: 15px;
 
 	&s {
@@ -21,14 +21,10 @@
 			color: white;
 			width: 100%;
 			font-family: $open-sans;
-			// text-align: center;
 			font-size: 3em; 
-			// text-decoration: underline;
 		}
 		&__parallax {
-			// max-height: 80vh;	
 			padding: 100px 10%;
-			// padding: 100px 50px;
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
@@ -38,17 +34,17 @@
 		}
 	}
 
+	
+	
 	&__title {
-		// text-align: center;
 		padding: 15px 0 20px 0;
 		color: $medium-black;
 		font-size: 1.5em;
 		align-items: flex-end;
-
+		
 	}
 	&__images {
-		display: flex;
-		justify-content: center;
+		justify-self: center;
 		&-html {
 			fill: $medium-black;	
 			width: 80px; 
@@ -75,6 +71,47 @@
 		} 
 	}
 
+	&__big {
+		display: flex;
+		// width: 100%;
+	}
+	&__first {
+		display: flex;
+    	flex-direction: column;
+    	align-items: center;
+	}
+	&__second {
+		display: none;
+	}
+	
+}
+
+.active {
+	justify-content: center;
+	.skill__big {
+		justify-content: space-between;
+		width: 70%;
+	}
+	.skill__third {
+		display: block;
+	}
+	.skill__second {
+		display: block;
+		font-size: .9em;
+	}
+	.skill__third {
+		padding-top: 8px;
+	}
+	.skill__images-html {
+		width: 40px;
+	}
+	.skill__title {
+		font-size: .9em;
+		padding: 0;
+	}
+	progress {
+		margin: 0;
+	}
 }
 
 .html-skill {
@@ -159,4 +196,53 @@
 			fill: white;
 		}
 	}
+}
+
+progress {
+	margin-bottom: 10px;
+	&[value] {
+		appearance: none;
+		max-width: 200px;
+		height: 15px;
+		
+		&::-webkit-progress-bar {
+			background-color: #eee;
+			border-radius: 2px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+		}
+		&::-webkit-progress-value {
+			background-image: linear-gradient(to right,  #00c6ab, #009bff);
+			border-radius: 2px; 
+		}
+
+
+		&::-moz-progress-bar {
+			background-image: -moz-linear-gradient(to right,  #00c6ab, #009bff);
+			border-radius: 2px; 
+		}
+	}
+}
+
+.skill__third {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.skill {
+		width: 40%;
+		&s__parallax {
+			justify-content: center;
+		}
+	}
+
+}
+
+@media (max-width: 530px) {
+	.skill {
+		width: 70%;
+		&s__parallax {
+			justify-content: center;
+		}
+	}
+
 }
