@@ -6,8 +6,9 @@
 	width: 30%;
 	height: 210px;
 	box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-	// border-radius: 4px;
+	transition: all .5s ease-in-out;
 	margin: 15px;
+	overflow: hidden;
 
 	&s {
 		background-image: url("../../../assets/images/newSVG/Flat-Mountains.svg");
@@ -37,15 +38,17 @@
 	
 	
 	&__title {
-		padding: 15px 0 20px 0;
+		padding: 15px 0 0 0;
 		color: $medium-black;
 		font-size: 1.5em;
 		align-items: flex-end;
+		transition: all .5s ease-in;
 		
 	}
 	&__images {
 		justify-self: center;
 		&-html {
+			transition: all .5s ease-in;
 			fill: $medium-black;	
 			width: 80px; 
 		}
@@ -71,52 +74,59 @@
 		} 
 	}
 
-	&__big {
-		display: flex;
-		// width: 100%;
-	}
-	&__first {
+	&__main {
 		display: flex;
     	flex-direction: column;
-    	align-items: center;
+		align-items: center;
+		justify-content: center;
 	}
-	&__second {
-		display: none;
-	}
+	
 	
 }
 
 .active {
 	justify-content: center;
-	.skill__big {
-		justify-content: space-between;
-		width: 70%;
+
+	.skill {
+		transform: scale(2);
+		&__images {
+			transform: scale(.6);
+		}
+		&__title {
+			transform: scale(.8);
+			padding: 0;
+		}
+		&__bar {
+			transform: translateY(0);
+			width: 85%;
+			margin-top: 15px;
+			&::after {
+				width: 90%;
+				height: 15px;
+				width: 90%;
+			}
+			&-text {
+				margin: 0;
+				padding: 0;
+				line-height: 100%; 
+			}
+		}
 	}
-	.skill__third {
-		display: block;
-	}
-	.skill__second {
-		display: block;
-		font-size: .9em;
-	}
-	.skill__third {
-		padding-top: 8px;
+	
+}
+
+.html-skill.active {
+	background-color: $html-blue;
+	.skill__title {
+		color: white;
 	}
 	.skill__images-html {
-		width: 40px;
-	}
-	.skill__title {
-		font-size: .9em;
-		padding: 0;
-	}
-	progress {
-		margin: 0;
+		fill: white;
 	}
 }
 
 .html-skill {
 	background-color: white;
-	transition: all .5s ease-in;
 	&:hover{
 		background-color: $html-blue;
 		.skill__title {
@@ -198,34 +208,37 @@
 	}
 }
 
-progress {
-	margin-bottom: 10px;
-	&[value] {
-		appearance: none;
-		max-width: 200px;
+
+.skill__bar {
+	display: flex;
+	width: 85%;
+	background-color: white;
+	height: 20px;
+	border-radius: 10px;
+	align-items: center;
+	padding-left: 3px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	justify-content: space-around;
+	flex-direction: column;
+	transform: translateY(100px);
+	transition: all .5s ease-in-out;
+
+	&::after {
+		transition: all .5s ease-in;
+		content: "";
+		background-color: black;
 		height: 15px;
-		
-		&::-webkit-progress-bar {
-			background-color: #eee;
-			border-radius: 2px;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-		}
-		&::-webkit-progress-value {
-			background-image: linear-gradient(to right,  #00c6ab, #009bff);
-			border-radius: 2px; 
-		}
-
-
-		&::-moz-progress-bar {
-			background-image: -moz-linear-gradient(to right,  #00c6ab, #009bff);
-			border-radius: 2px; 
-		}
+		width: 90%;
+		border-radius: 10px;
+		align-self: flex-start;
+	}
+	&-text {
+		position: absolute;
+		mix-blend-mode: difference;
 	}
 }
 
-.skill__third {
-	display: none;
-}
+
 
 @media (max-width: 768px) {
 	.skill {

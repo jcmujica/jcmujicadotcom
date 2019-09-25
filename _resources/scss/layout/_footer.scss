@@ -1,0 +1,87 @@
+.footer {
+    background-color: $medium-black;
+    color: white;
+    justify-content: space-around;
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        margin: 30px 10%;
+
+    }
+    &__social {
+        display: flex;
+        width: 50%;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        &-icons {
+            display: flex;
+        }
+        &-title {
+            font-size: 2em;
+            font-family: $open-sans;
+        }
+        &-instagram {
+            width: 30px;
+            fill: white;
+            margin: 10px 15px;
+        }
+        &-facebook {
+            width: 30px;
+            fill: white;
+            margin: 10px 15px;
+        }
+        &-linkedin {
+            width: 30px;
+            fill: white;
+            margin: 10px 15px;
+        }
+    }
+    &__divider {
+        background-color: white;
+        width: 1px;
+        height: 100%;
+    }
+    &__form {
+        &-title {
+            font-size: 2em;
+            font-family: $open-sans;
+        }
+    }
+}
+
+.form {
+	width: 100%;
+	margin: 0 auto;
+	padding: 25px;
+	display: flex;
+    justify-content: center;
+    &__input {
+        font-family: $inconsolata;
+    }
+    &__label {
+        font-family: $open-sans;
+        font-weight: 400;
+        color: white;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill {
+        width: 40%;
+        &s__parallax {
+            justify-content: center;
+        }
+    }
+
+}
+
+@media (max-width: 530px) {
+	.skill {
+		width: 70%;
+		&s__parallax {
+			justify-content: center;
+		}
+	}
+
+}

@@ -3,16 +3,24 @@ import AOS from 'aos'
 document.addEventListener('DOMContentLoaded', function() {
 	AOS.init()
 
-
 	var skills = document.getElementsByClassName('skill');
-	
-	for(var skill in skills) {
-		skills[skill].addEventListener('click', function(event){
-			event.target.classList.toggle('active');
-			console.log(event.target);
+	var h = (window.innerHeight) * (.83);
+
+	for(var i = 0; i < skills.length; i++) {
+		skills[i].addEventListener('click', function(event){
+			event.stopPropagation();
+			this.classList.toggle('active');
 		}, false);
 	}
 
-	// function
+	
+	window.addEventListener('scroll', function(e){
 
-})
+		if (pageYOffset < h) {
+			document.getElementById('nav').classList.remove('nav_scrolled');
+		} else {
+			document.getElementById('nav').classList.add('nav_scrolled');
+		}
+	})
+
+});
