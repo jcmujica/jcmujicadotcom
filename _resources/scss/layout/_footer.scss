@@ -2,39 +2,60 @@
     background-color: $medium-black;
     color: white;
     justify-content: space-around;
+    min-height: 100vh;
+    padding-bottom: 0;
+    padding-top: 100px;
+    display: flex;
+    // align-items: center;
     &__container {
         display: grid;
+        width: 90%;
         grid-template-columns: 1fr 100px 1fr;
         margin: 30px 10%;
 
     }
     &__social {
         display: flex;
-        width: 50%;
+        width: 90%;
         box-sizing: border-box;
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
+        &-text {
+            // font-size: 1.3em;
+            a {
+                color: white;
+            }
+        }
         &-icons {
+            margin-top: 40px;
+        }
+        &-iconbox {
             display: flex;
+            align-items: center;
+            width: 100%;
         }
         &-title {
             font-size: 2em;
             font-family: $open-sans;
         }
         &-instagram {
+            display: inline-block;
             width: 30px;
+            height: 30px;
             fill: white;
-            margin: 10px 15px;
+            margin: 10px 15px 10px 0;
         }
         &-facebook {
             width: 30px;
+            height: 30px;
             fill: white;
-            margin: 10px 15px;
+            margin: 10px 15px 10px 0;
         }
         &-linkedin {
             width: 30px;
+            height: 30px;
             fill: white;
-            margin: 10px 15px;
+            margin: 10px 15px 10px 0;
         }
     }
     &__divider {
@@ -47,6 +68,12 @@
             font-size: 2em;
             font-family: $open-sans;
         }
+    }
+    &__copyright {
+        margin: 90px 0;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
     }
 }
 

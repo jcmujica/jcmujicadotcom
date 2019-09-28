@@ -100,16 +100,49 @@
 			transform: translateY(0);
 			width: 85%;
 			margin-top: 15px;
-			&::after {
-				width: 90%;
-				height: 15px;
-				width: 90%;
+			&.html {
+				&::after {
+					width: 95%;
+					height: 15px;
+					width: 90%;
+				}
 			}
-			&-text {
-				margin: 0;
-				padding: 0;
-				line-height: 100%; 
+			&.sass {
+				&::after {
+					width: 90%;
+					height: 15px;
+					width: 75%;
+				}
 			}
+			&.js {
+				&::after {
+					width: 90%;
+					height: 15px;
+					width: 70%;
+				}
+			}
+			&.react {
+				&::after {
+					width: 90%;
+					height: 15px;
+					width: 30%;
+				}
+			}
+			&.git {
+				&::after {
+					width: 90%;
+					height: 15px;
+					width: 80%;
+				}
+			}
+			&.wp {
+				&::after {
+					width: 90%;
+					height: 15px;
+					width: 80%;
+				}
+			}
+			
 		}
 	}
 	
@@ -121,6 +154,51 @@
 		color: white;
 	}
 	.skill__images-html {
+		fill: white;
+	}
+}
+.sass-skill.active {
+	background-color: $sass-pink;
+	.skill__title {
+		color: white;
+	}
+	.skill__images-sass {
+		fill: white;
+	}
+}
+.javascript-skill.active {
+	background-color: $js-yellow;
+	.skill__title {
+		color: white;
+	}
+	.skill__images-js {
+		fill: white;
+	}
+}
+.react-skill.active {
+	background-color: $react-blue;
+	.skill__title {
+		color: white;
+	}
+	.skill__images-react {
+		fill: white;
+	}
+}
+.git-skill.active {
+	background-color: $git-orange;
+	.skill__title {
+		color: white;
+	}
+	.skill__images-git {
+		fill: white;
+	}
+}
+.wp-skill.active {
+	background-color: $wp-blue;
+	.skill__title {
+		color: white;
+	}
+	.skill__images-wp {
 		fill: white;
 	}
 }
@@ -228,7 +306,7 @@
 		content: "";
 		background-color: black;
 		height: 15px;
-		width: 90%;
+		width: 0%;
 		border-radius: 10px;
 		align-self: flex-start;
 	}

@@ -20,9 +20,7 @@
 			width: 100%;
 			left: 0;
 			height: 100vh;
-			background-image: -webkit-linear-gradient(bottom left, #00a471, #00999f, #0089dc, #006eff, #122eeb);
-			background-image: -o-linear-gradient(bottom left, #00a471, #00999f, #0089dc, #006eff, #122eeb);
-			background-image: linear-gradient(to top right, $light-blue, $mid-blue, $darker-blue 80%);
+			background-image: linear-gradient(to right top, #0e066f, #121180, #141c92, #1426a4, #1131b7, #0b3cc0, #0547c9, #0052d2, #005dd1, #0067cd, #0070c8, #0078c2);
 			opacity: .8;
 			z-index: 1;
 		}

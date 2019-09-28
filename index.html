@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/bulma.min.css">
   <link rel="stylesheet" href="_webpack/node_modules/aos/dist/aos.css" />
@@ -21,7 +22,7 @@
         <li class="hero__nav-link"><a href="#skills">Skills</a></li>
         <li class="hero__nav-link"><a href="#projects">Projects</a></li>
         <li class="hero__nav-link"><a href="#blog">Blog</a></li>
-        <li class="hero__nav-link"><a href="#contact">Contact</a></li>
+        <li class="hero__nav-link"><a href="#footer">Contact</a></li>
       </ul>
       <div class="hero__nav-hamburger">
         <div class="hero__nav-line hero__nav-first"></div>
@@ -233,11 +234,11 @@
             </svg>
           </div>
           <h2 class="skill__title">HTML & CSS</h2>
-          <div class="skill__bar">
-            <span class="skill__bar-text">
-              100%
-            </span>
-          </div>
+        </div>
+        <div class="skill__bar html">
+          <span class="skill__bar-text">
+            95%
+          </span>
         </div>
       </div>
 
@@ -252,9 +253,9 @@
           <h2 class="skill__title">Sass</h2>
         </div>
 
-        <div class="skill__bar">
+        <div class="skill__bar sass">
           <span class="skill__bar-text">
-              100%
+              75%
           </span>
         </div>
       </div>
@@ -274,9 +275,9 @@
           </div>
           <h2 class="skill__title">JavaScript</h2>
         </div>
-        <div class="skill__bar">
+        <div class="skill__bar js">
             <span class="skill__bar-text">
-                100%
+                70%
             </span>
           </div>
       </div>
@@ -315,9 +316,9 @@
           </div>
           <h2 class="skill__title">React</h2>
         </div>
-        <div class="skill__bar">
+        <div class="skill__bar react">
             <span class="skill__bar-text">
-                100%
+                30%
             </span>
           </div>
       </div>
@@ -338,9 +339,9 @@
           </div>
           <h2 class="skill__title">Git</h2>
         </div>
-        <div class="skill__bar">
+        <div class="skill__bar git">
             <span class="skill__bar-text">
-                100%
+                80%
             </span>
           </div>
       </div>
@@ -371,12 +372,12 @@
             </svg>
           </div>
           <h2 class="skill__title">Wordpress</h2>
-          <div class="skill__bar">
-            <span class="skill__bar-text">
-              100%
-            </span>
-          </div>
         </div>
+            <div class="skill__bar wp">
+              <span class="skill__bar-text">
+                80%
+              </span>
+            </div>
       </div>
       
     </div>
@@ -429,11 +430,12 @@
         <div class="project__image"></div>
         <img src="/assets/images/the-top-chile-400x360.jpg" alt="" class="project__image">
       </div>
-
+      <button class="project__button">More</button>
     </div>
   </section>
 
   <section id="blog" class="blog">
+    <h2 class="blog__title">Blog</h2>
     <div class="blog__posts">
       <div class="blog__post">
         <div class="blog__post-image">
@@ -471,60 +473,69 @@
             veniam odio tempora.</p>
         </div>
       </div>
-
-
+      <button class="blog__button">More</button>
     </div>
   </section>
 
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="footer__container">
 
       <div class="footer__social">
         <h3 class="footer__social-title">Follow me</h3>
         <div class="footer__social-icons">
-          <a href="https://www.instagram.com/jcmujica/" target="_blank" class="footer__social-instagram">
-            <svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-              <g>
+          <div class="footer__social-iconbox">
+            <a href="https://www.instagram.com/jcmujica/" target="_blank" class="footer__social-instagram">
+              <svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <g>
-                  <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
-          C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
-            h192c61.76,0,112,50.24,112,112V352z" />
+                  <g>
+                    <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+            C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+              h192c61.76,0,112,50.24,112,112V352z" />
+                  </g>
                 </g>
-              </g>
-              <g>
                 <g>
-                  <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
-            c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z" />
+                  <g>
+                    <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+              c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z" />
+                  </g>
                 </g>
-              </g>
-              <g>
                 <g>
-                  <circle cx="393.6" cy="118.4" r="17.056" />
+                  <g>
+                    <circle cx="393.6" cy="118.4" r="17.056" />
+                  </g>
                 </g>
-              </g>
-            </svg>
-          </a>
+              </svg>
+            </a>
+            <span class="footer__social-text"><a href="https://www.instagram.com/jcmujica/" target="_blank">On Instagram</a></span>
+          </div>
 
-          <a href="https://www.facebook.com/jcmujica" target="_blank" class="footer__social-facebook">
-            <svg x="0px" y="0px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
-              xml:space="preserve">
-              <g>
+          <div class="footer__social-iconbox">
+            <a href="https://www.facebook.com/jcmujica" target="_blank" class="footer__social-facebook">
+              <svg x="0px" y="0px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
+                xml:space="preserve">
                 <g>
-                  <path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
-         C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845
-           v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z
-           " />
+                  <g>
+                    <path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
+          C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845
+            v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z
+            " />
+                  </g>
                 </g>
-              </g>
-            </svg>
-          </a>
+              </svg>
+            </a>
+            <span class="footer__social-text"><a href="https://www.facebook.com/jcmujica" target="_blank" class="footer__social-facebook">On Facebook</a></span>
+          </div>
 
-          <a href="https://www.linkedin.com/in/jcmujica/" target="_blank" class="footer__social-linkedin">
-            <svg viewBox="0 0 512 512">
-              <path
-                d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0" />
-            </svg>
-          </a>
+          <div class="footer__social-iconbox">
+            <a href="https://www.linkedin.com/in/jcmujica/" target="_blank" class="footer__social-linkedin">
+              <svg viewBox="0 0 512 512">
+                <path
+                  d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0" />
+              </svg>
+            </a>
+            <span class="footer__social-text"><a href="https://www.facebook.com/jcmujica" target="_blank">On Linkedin</a></span>
+          </div>
+
         </div>
       </div>
       <div class="footer__divider">
@@ -545,6 +556,14 @@
               <input class="form__input input" type="email" placeholder="e.g. alexsmith@gmail.com">
             </div>
           </div>
+          <div class="form__field field">
+            <label class="form__label label">Tell me</label>
+            <div class="form__control control">
+              <textarea class="textarea" placeholder="Your idea"></textarea>
+            </div>
+          </div>
+
+          
           <div class="form__control control">
             <button class="form__button button is-white">Submit</button>
           </div>
